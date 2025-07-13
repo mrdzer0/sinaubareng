@@ -52,6 +52,28 @@ snyk test
 - Hasil scan akan langsung muncul di terminal.
 - Jika ada kerentanan, Snyk akan menampilkan detil dan rekomendasi perbaikannya.
 
+## 🚦 Tutorial Supplychain attack
+### 1. Create a fake (malicious) module
+```sh
+mkdir fake-package
+cd fake-package
+npm init -y
+```
+### 2. Edit `package.json` dengan menambahkan `postinstall` pada script
+```sh
+"scripts": {
+  "postinstall": "echo 'You have been pwned!' > pwned.txt"
+}
+```
+### 3. Repack modulenya / bisa refer ke folder **fake-package**
+```sh
+npm pack
+```
+### 4. Coba install modulnya
+```sh
+npm install ../fake-package/fake-package-1.0.0.tgz
+```
+
 ## 📌 Note
 - `report_cve2019.html`, `report_log4j.html`, `report_snyklab.html` merupakan contoh hasil report dari tools OWASP Dependency-Check
 
