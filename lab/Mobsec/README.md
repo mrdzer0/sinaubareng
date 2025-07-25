@@ -6,6 +6,7 @@ Pada repo ini, berisikan informasi terkait kebutuhan lab dan cheatsheet untuk me
 Follow below steps to setup Burp to intercept network traffic on an Android 13 device and based on:
 - https://portswigger.net/burp/documentation/desktop/mobile/config-android-device
 - https://book.hacktricks.xyz/mobile-pentesting/android-app-pentesting/install-burp-certificate#on-a-virtual-machine
+- https://mobsf.github.io/docs/#/running_mobsf_docker
 
 ## 📚 Lab Requirements
 - Android Emulator / Rooted Android device
@@ -13,15 +14,15 @@ Follow below steps to setup Burp to intercept network traffic on an Android 13 d
 - Download Insecured apk di section **Daftar Lab Exercise**
 
 ## 📚 Daftar Lab Exercise
-- **DIVA (Damn insecure and vulnerable App)** 
+- **DIVA (Damn insecure and vulnerable App)** | [writeup](https://github.com/christinec-dev/DIVA_APK_Writeups)
 ```sh
 wget http://www.payatu.com/wp-content/uploads/2016/01/diva-beta.tar.gz
 ```
-- **InjuredAndroid**
+- **InjuredAndroid** | [writeup](https://github.com/B3nac/InjuredAndroid/blob/master/InjuredAndroid-FlagWalkthroughs.md)
 ```sh
 wget https://github.com/B3nac/InjuredAndroid/releases/download/v1.0.12/InjuredAndroid-1.0.12-release.apk
 ```
-- **Insecure Bank v2**
+- **Insecure Bank v2** | [writeup](https://can-ozkan.medium.com/insecurebankv2-apk-android-walkthrough-34f83d814cfe)
 ```sh
 wget https://github.com/dineshshetty/Android-InsecureBankv2/releases/download/2.3.1/InsecureBankv2.apk
 ```
